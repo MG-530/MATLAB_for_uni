@@ -60,11 +60,11 @@ Each problem is described in the [📕 question file](./Proj.pdf), and answers a
 ├── Proj.pdf                    # 📕 Project questions
 ├── SelfStudyBooklet.pdf        # 📘 Study resource
 ├── answers/
-│   ├── Q1\_Bisection\_vs\_fzero.m
-│   ├── Q2\_Newton\_vs\_fzero.m
-│   ├── Q3\_HilbertMatrix.m
-│   ├── Q4\_OilFit\_RMSE.m
-│   └── Q5\_SurfaceAndContours.m
+│   ├── Q1_Bisection_vs_fzero.m
+│   ├── Q2_Newton_vs_fzero.m
+│   ├── Q3_HilbertMatrix.m
+│   ├── Q4_OilFit_RMSE.m
+│   └── Q5_SurfaceAndContours.m
 └── README.md                   # 📄 This file
 
 ```
