@@ -13,7 +13,7 @@
 
 This repository contains MATLAB solutions to the final project for the **Math Software** course. The problems involve root-finding methods, matrix analysis, curve fitting, and 3D plotting using MATLAB.  
 
-Each problem is described in the [📕 question file](./Proj.pdf), and answers are provided in individual `.m` files. Additionally, a [📘 Self-Study Booklet](./SelfStudyBooklet.pdf) is included to help with independent learning.
+Each problem is described in the [📕 question file](./Proj.pdf), and answers are provided in individual `.m` files. Additionally, a [📘 Self-Study Book](./SelfStudyBook.pdf) is included to help with independent learning.
 
 ---
 
@@ -58,7 +58,7 @@ Each problem is described in the [📕 question file](./Proj.pdf), and answers a
 
 📦 MathSoftware-Project-Guilan-14042
 ├── Proj.pdf                    # 📕 Project questions
-├── SelfStudyBooklet.pdf        # 📘 Study resource
+├── SelfStudyBook.pdf        # 📘 Study resource
 ├── answers/
 │   ├── Q1_Bisection_vs_fzero.m
 │   ├── Q2_Newton_vs_fzero.m
