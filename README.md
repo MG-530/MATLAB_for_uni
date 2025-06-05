@@ -98,7 +98,3 @@ Please credit appropriately if you reuse content.
 
 > 💬 _"Pure mathematics is, in its way, the poetry of logical ideas."_  
 > — Albert Einstein
-```
-
----
-
