@@ -22,7 +22,7 @@ fprintf('Difference from fzero: %.2e\n\n', abs(root1_bisection - root1_fzero));
 
 % Plot
 figure(1);
-subplot(2,2,1);
+subplot(1,2,1);
 plot(x_plot, y_plot, 'b-', 'LineWidth', 2);
 hold on;
 plot(x_plot, zeros(size(x_plot)), 'k--', 'LineWidth', 1);
@@ -31,7 +31,7 @@ grid on;
 title('Function: cos(x/2) + 6 - x');
 xlabel('x'); ylabel('f(x)');
 
-subplot(2,2,2);
+subplot(1,2,2);
 semilogy(1:iter1_bisection, error_hist1, 'ro-', 'LineWidth', 2);
 grid on;
 title('Bisection Convergence');

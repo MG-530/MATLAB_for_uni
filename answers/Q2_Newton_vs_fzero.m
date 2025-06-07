@@ -24,7 +24,7 @@ fprintf('MATLAB fzero:       Root = %.5f\n', root2_fzero);
 
 % Plot function and convergence
 figure(2);
-subplot(2,2,1);
+subplot(1,2,1);
 x_plot2 = 0.1:0.01:3;
 y_plot2 = arrayfun(f2, x_plot2);
 plot(x_plot2, y_plot2, 'b-', 'LineWidth', 2);
@@ -35,7 +35,7 @@ grid on;
 title('Function: ln(x) + x^2 - 3');
 xlabel('x'); ylabel('f(x)');
 
-subplot(2,2,2);
+subplot(1,2,2);
 plot(0:iter2_newton, hist2_newton, 'ro-', 'LineWidth', 2);
 grid on;
 title('Newton Method Convergence');
