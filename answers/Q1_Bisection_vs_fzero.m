@@ -13,13 +13,7 @@ x_plot = 0:0.1:10;
 y_plot = arrayfun(f1, x_plot);
 
 figure(1);
-subplot(2,2,1);
-plot(x_plot, y_plot, 'b-', 'LineWidth', 2);
-hold on;
-plot(x_plot, zeros(size(x_plot)), 'k--', 'LineWidth', 1);
-grid on;
-title('Function: cos(x/2) + 6 - x');
-xlabel('x'); ylabel('f(x)');
+
 
 % Find root using both methods
 tol = 1e-5;
@@ -33,6 +27,16 @@ fprintf('MATLAB fzero:       Root = %.5f\n', root1_fzero);
 fprintf('Difference from fzero: %.2e\n\n', abs(root1_method1 - root1_fzero));
 
 % Plot convergence
+subplot(2,2,1);
+plot(x_plot, y_plot, 'b-', 'LineWidth', 2);
+hold on;
+plot(x_plot, zeros(size(x_plot)), 'k--', 'LineWidth', 1);
+plot(root1_method1, 0, 'ro', 'MarkerSize', 10, 'MarkerFaceColor', 'r');
+
+grid on;
+title('Function: cos(x/2) + 6 - x');
+xlabel('x'); ylabel('f(x)');
+
 subplot(2,2,2);
 semilogy(1:iter1_method1, error_hist1, 'ro-', 'LineWidth', 2);
 grid on;
