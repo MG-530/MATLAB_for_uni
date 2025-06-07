@@ -17,28 +17,28 @@ figure(1);
 
 % Find root using both methods
 tol = 1e-5;
-[root1_method1, iter1_method1, error_hist1] = bisection_method(f1, 0, 10, tol);
+[root1_bisection, iter1_bisection, error_hist1] = bisection_method(f1, 0, 10, tol);
 
 % Compare with fzeros
 root1_fzero = fzero(f1, 6);
 
-fprintf('Bisection Method 1: Root = %.5f, Iterations = %d\n', root1_method1, iter1_method1);
+fprintf('Bisection Method 1: Root = %.5f, Iterations = %d\n', root1_bisection, iter1_bisection);
 fprintf('MATLAB fzero:       Root = %.5f\n', root1_fzero);
-fprintf('Difference from fzero: %.2e\n\n', abs(root1_method1 - root1_fzero));
+fprintf('Difference from fzero: %.2e\n\n', abs(root1_bisection - root1_fzero));
 
 % Plot convergence
 subplot(2,2,1);
 plot(x_plot, y_plot, 'b-', 'LineWidth', 2);
 hold on;
 plot(x_plot, zeros(size(x_plot)), 'k--', 'LineWidth', 1);
-plot(root1_method1, 0, 'ro', 'MarkerSize', 10, 'MarkerFaceColor', 'r');
+plot(root1_bisection, 0, 'ro', 'MarkerSize', 10, 'MarkerFaceColor', 'r');
 
 grid on;
 title('Function: cos(x/2) + 6 - x');
 xlabel('x'); ylabel('f(x)');
 
 subplot(2,2,2);
-semilogy(1:iter1_method1, error_hist1, 'ro-', 'LineWidth', 2);
+semilogy(1:iter1_bisection, error_hist1, 'ro-', 'LineWidth', 2);
 grid on;
 title('Bisection Convergence');
 xlabel('Iteration'); ylabel('Error (log scale)');
